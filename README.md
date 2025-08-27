@@ -1,8 +1,8 @@
 # 📧 MailMind – Automate your email replies via n8n
 
-# 📧 Automatic Gmail Replies with n8n + Gemma AI
+# 📧 MailMind – Automate your email replies via n8n
 
-This project is an **AI-powered email assistant** built with [n8n](https://n8n.io/). It automates Gmail responses using **Gemma/Gemini AI** and logs interactions into **Google Sheets**.
+**MailMind** is an **AI-powered email assistant** built with [n8n](https://n8n.io/). It automates Gmail responses using **Gemma/Gemini AI** and logs interactions into **Google Sheets**.
 
 ---
 
@@ -19,6 +19,10 @@ This project is an **AI-powered email assistant** built with [n8n](https://n8n.i
 ---
 
 ## 🔹 Workflow Overview
+
+Here’s how the automation looks inside **n8n**:
+
+![Workflow Screenshot](MailMind-Screenshots/n8n-workflow.png)
 
 ```
 [Schedule Trigger] 
@@ -60,7 +64,19 @@ This project is an **AI-powered email assistant** built with [n8n](https://n8n.i
 
 ---
 
+## 🔹 Example Gmail Reply
+
+AI automatically drafts and sends replies:
+
+![Gmail AI Reply](MailMind-Screenshots/email-response.png)
+
+---
+
 ## 🔹 Example Google Sheet
+
+All interactions are logged in Google Sheets:
+
+![Google Sheet Log](MailMind-Screenshots/google-sheet-data.png)
 
 | Sender Name | From Email                                    | Email Body                   | Draft Reply                   | Thread ID |
 | ----------- | --------------------------------------------- | ---------------------------- | ----------------------------- | --------- |
