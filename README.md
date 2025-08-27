@@ -1,7 +1,5 @@
 # 📧 MailMind – Automate your email replies via n8n
 
-# 📧 MailMind – Automate your email replies via n8n
-
 **MailMind** is an **AI-powered email assistant** built with [n8n](https://n8n.io/). It automates Gmail responses using **Gemma/Gemini AI** and logs interactions into **Google Sheets**.
 
 ---
