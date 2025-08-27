@@ -1,6 +1,6 @@
 # 📧 MailMind – Automate your email replies via n8n
 
-## Automatic Gmail Replies with n8n + Gemma AI
+# 📧 Automatic Gmail Replies with n8n + Gemma AI
 
 This project is an **AI-powered email assistant** built with [n8n](https://n8n.io/). It automates Gmail responses using **Gemma/Gemini AI** and logs interactions into **Google Sheets**.
 
@@ -9,6 +9,7 @@ This project is an **AI-powered email assistant** built with [n8n](https://n8n.i
 ## 🔹 Features
 
 * Fetches **unread / starred / important Gmail messages**
+* Only replies to **Starred or Important emails** (user can manually mark these) → prevents replying to every mail
 * Reads the **email body**
 * Uses **Gemma/Gemini AI** to generate a professional reply
 * Logs email details + AI draft into **Google Sheets**
@@ -20,12 +21,12 @@ This project is an **AI-powered email assistant** built with [n8n](https://n8n.i
 ## 🔹 Workflow Overview
 
 ```
-[Schedule Trigger]
-   → [Get All Gmail Messages]
-   → [Get a Message]
-   → [AI Agent (Gemma/Gemini)]
-   → [Append Row in Google Sheets]
-   → [Reply to Message]
+[Schedule Trigger] 
+   → [Get All Gmail Messages] 
+   → [Get a Message] 
+   → [AI Agent (Gemma/Gemini)] 
+   → [Append Row in Google Sheets] 
+   → [Reply to Message] 
    → [Mark as Read]
 ```
 
@@ -55,7 +56,7 @@ This project is an **AI-powered email assistant** built with [n8n](https://n8n.i
 4. Update the **Google Sheet ID** in the `Append row in sheet` node.
 5. Activate the workflow.
 
-✅ Now your Gmail will automatically reply to important emails and log them in Google Sheets.
+✅ Now your Gmail will automatically reply to starred/important emails (which you mark manually) and log them in Google Sheets.
 
 ---
 
@@ -77,6 +78,7 @@ This project is an **AI-powered email assistant** built with [n8n](https://n8n.i
   Rohaz Bhalla
   ```
 * Emails are marked as **Read** only after reply is successfully sent.
+* Bot replies **only to messages marked Important or Starred**, so you can control which emails are handled automatically.
 
 ---
 
